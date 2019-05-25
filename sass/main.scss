@@ -1,0 +1,180 @@
+// Reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  color: #fff;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  .top-bar {
+    height: 70px;
+    background-color: #fff;
+    .logo {
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+  header {
+    height: calc(100vh - 70px);
+    background-image: url("../img/hero-sm.jpg");
+    background-position: center;
+    background-size: cover;
+    .hero-container {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.67);
+      height: 100%;
+      .hero-header {
+        font-size: 4.4rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 65px 0;
+        font-weight: 100;
+      }
+    }
+    .contacts-container {
+      width: 60%;
+      margin: 0 auto;
+      .contacts-header {
+        text-transform: uppercase;
+        font-size: 4.2rem;
+      }
+      p {
+        text-align: center;
+        font-size: 2.6rem;
+      }
+      .contact-name {
+        padding-top: 15px;
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media (orientation: landscape) {
+  .wrapper {
+    .top-bar {
+      .logo {
+      }
+    }
+    header {
+      background-image: url("../img/hero-xl.jpg");
+      .hero-container {
+        .hero-header {
+          font-size: 3.6rem;
+          padding: 25px 0;
+        }
+      }
+      .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        .contacts-header {
+          flex-basis: 100%;
+          font-size: 3rem;
+        }
+        .contact {
+          flex-basis: 50%;
+        }
+        p {
+          font-size: 2.2rem;
+        }
+        .contact-name {
+        }
+      }
+    }
+    footer {
+    }
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  .wrapper {
+    .top-bar {
+      .logo {
+      }
+    }
+    header {
+      .hero-container {
+        .hero-header {
+          font-size: 6rem;
+          padding: 160px 0 60px;
+        }
+      }
+      .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        .contacts-header {
+          flex-basis: 100%;
+          font-size: 4.4rem;
+        }
+        .contact {
+          flex-basis: 50%;
+        }
+        p {
+          font-size: 3rem;
+        }
+        .contact-name {
+        }
+      }
+    }
+    footer {
+    }
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) {
+  .wrapper {
+    .top-bar {
+      .logo {
+      }
+    }
+    header {
+      .hero-container {
+        .hero-header {
+          font-size: 5rem;
+          padding: 240px 0 60px;
+        }
+      }
+      .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        .contacts-header {
+          flex-basis: 100%;
+          font-size: 4.4rem;
+        }
+        .contact {
+          flex-basis: 100%;
+        }
+        p {
+          font-size: 3rem;
+        }
+        .contact-name {
+        }
+      }
+    }
+    footer {
+    }
+  }
+}

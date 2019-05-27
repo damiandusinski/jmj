@@ -28,7 +28,7 @@ html {
   }
   header {
     height: calc(100vh - 70px);
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/hero-md.jpg");
     background-position: center;
     background-size: cover;
     .hero-container {
@@ -79,7 +79,7 @@ html {
       }
     }
     header {
-      background-image: url("../img/hero.jpg");
+      background-image: url("../img/hero-xl.jpg");
       .hero-container {
         .hero-header {
           font-size: 3.6rem;
